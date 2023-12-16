@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Researched Movie</title>
+</head>
+<body>
+    <h1>View Researched Movie</h1>
+    <br>
+    <strong>Name: </strong><%= movieName %><br>
+    <strong>Year: </strong><%= year %><br>
+    <strong>Starring: </strong><%= starring %><br>
+    <strong>Poster: </strong><br>
+    <!--
+        I want to make sure the poster image is sized appropriately
+        so I will use the width and height attributes of the img tag
+    -->
+    <img src="<%= poster %>" alt="Poster for <%= movieName %>" width="200" height="300"><br>
+    <hr>
+    <br>
+    <!--
+        Give users the option to add the movie to their watchlist
+    -->
+    <hr>
+    <a href="/">Return to main page</a>
+</body>
+</html>

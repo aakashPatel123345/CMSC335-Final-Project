@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Watchlist</title>
+</head>
+<body>
+    <h1>Add to Watchlist</h1>
+    <form id="applicationForm" method="post">
+        <fieldset>
+            Movie Name: <input type="text" name="movieName" id="movieName"> 
+            <br>
+            <!-- I want a select field highlight watching priority for a certain movie 
+                Only one option can be selected at a time
+            -->
+            Watching Priority:
+            <select name="priority" id="priority">
+                <option value="1">1 - Low</option>
+                <option value="2">2 - Medium</option>
+                <option value="3">3 - High</option>
+            </select>
+
+            <br>
+            Notes
+            <br>
+            <textarea name="notes" rows="10" cols="45"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="Reset" id="reset">
+        <input type="submit" value="Submit Application" id="submitButton">
+        <hr>
+    </form>
+    <a href="/">Return to main page</a>
+</body>
+</html>

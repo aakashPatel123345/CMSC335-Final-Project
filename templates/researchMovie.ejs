@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Movie</title>
+</head>
+<body>
+    <h1>Research Movie</h1>
+    <span>Take a look at whatever movie you want to find!</span>
+    <br>
+    <br>
+    <form id="movieResaerchForm" method="post">
+        <!--
+            users only need to provide the movie name to research
+        -->
+        <fieldset>
+            <legend>Movie Information</legend>
+            <label>Movie Name</label>
+            <input type="text" name="movieName" id="movieName" required>
+            <input type="reset" value="Reset" id="reset">
+            <input type="submit" value="Research Movie" id="submitButton">
+        </fieldset>
+
+        <br>
+    </form>
+    <a href="/">Return to main page</a>
+</body>
+</html>

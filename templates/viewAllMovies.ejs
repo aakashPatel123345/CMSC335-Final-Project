@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your WatchList</title>
+</head>
+<body>
+    <h1>Your WatchList</h1>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Movie Name</th>
+            <th>Priority</th>
+            <th>Notes</th>
+        </tr>
+        <% for(let i = 0; i < movies.length; i++) { %>
+            <tr>
+                <td><%= movies[i].movieName %></td>
+                <td><%= movies[i].priority %></td>
+                <td><%= movies[i].notes %></td>
+            </tr>
+        <% } %>
+    </table>
+    <hr>
+    <a href="/">Return to main page</a>
+</body>
+</html>
