@@ -1,7 +1,7 @@
 const http = require('http');
 const path = require('path');
-require("dotenv").config({ path: path.resolve(__dirname, 'credentialsDontPost/.env') })  
-let portNumber = 5000;
+require("dotenv").config({ path: path.resolve(__dirname, './credentialsDontPost/.env') })  
+let portNumber = 3000;
 const httpSuccessStatus = 200;
 const express = require("express"); /* Accessing express module */
 const app = express(); /* app is a request handler function */
